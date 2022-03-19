@@ -14,14 +14,14 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: CustomColor.inputBackColor,
+          color: CustomColor.paleGrey,
           borderRadius: BorderRadius.all(Radius.circular(10))),
       child: TextField(
         onChanged: (text) {
           onChanged!(text);
         },
         decoration: InputDecoration(
-            focusColor: CustomColor.green,
+            focusColor: CustomColor.lightGreen,
             hintStyle: TextStyle(color: Colors.grey.shade400),
             hintText: hintText,
             prefixIcon: prefixIcon,
