@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
       child: Text(
         'sign_in'.tr,
         style: TextStyle(
-            color: CustomColor.green,
+            color: CustomColor.lightGreen,
             fontWeight: FontWeight.w400,
             fontFamily: "AcuminPro",
             fontStyle: FontStyle.normal,
@@ -77,7 +77,7 @@ class LoginPage extends StatelessWidget {
         CustomTextField(
           prefixIcon: Icon(
             Icons.mail_outline_outlined,
-            color: CustomColor.greyTextColor,
+            color: CustomColor.lightGreen,
           ),
           hintText: 'email'.tr,
           onChanged: (text) {
@@ -90,7 +90,7 @@ class LoginPage extends StatelessWidget {
         CustomTextField(
           prefixIcon: Icon(
             Icons.lock_outlined,
-            color: CustomColor.greyTextColor,
+            color: CustomColor.lightGreen,
           ),
           hintText: 'password'.tr,
         ),
@@ -116,7 +116,7 @@ class LoginPage extends StatelessWidget {
       child: TextButton(
         style: TextButton.styleFrom(
           minimumSize: Size(Get.width - 60, 60),
-          backgroundColor: CustomColor.green,
+          backgroundColor: CustomColor.lightGreen,
           shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(30.0)),
           ),
@@ -129,7 +129,7 @@ class LoginPage extends StatelessWidget {
             ),
             Text(
               'sign_in'.tr,
-              style: CustomTextStyle.buttonTextStyle,
+              style: CustomTextStyle.buttonTextStyleFS18,
             )
           ],
         ),

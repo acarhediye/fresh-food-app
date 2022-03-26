@@ -7,4 +7,8 @@ class CustomColor {
   static const Color boxShadowColor = Color(0x12000000);
   static const Color recipesInputColor = Color(0xffffffff);
   static const Color favoriesTextButtonColor = Color(0xffa6bcd0);
+
+  static const lightGreen = Color(0xff7bed8d);
+  static const greyBlue = Color(0xff748a9d);
+  static const paleGrey = Color(0xfff0f4f8);
 }

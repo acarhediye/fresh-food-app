@@ -5,8 +5,8 @@ import 'package:fresh_food/controllers/favoreies_all_controller/favories_control
 import 'package:fresh_food/views/pages/quick_shop_page.dart';
 import 'package:fresh_food/views/favories_page/favories_page.dart';
 import 'package:fresh_food/views/pages/home_page.dart';
-import 'package:fresh_food/views/pages/settings_page.dart';
 import 'package:fresh_food/views/pages/shopping_bag_page.dart';
+import 'package:fresh_food/views/settings_page/settings_page.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get.dart';
 import 'package:get/get_instance/src/extension_instance.dart';
