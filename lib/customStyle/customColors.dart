@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class CustomColor {
-  static final Color green = const Color.fromRGBO(123, 237, 141, 1);
-  static final Color inputBackColor = const Color(0xfff0f4f8);
-  static final Color greyTextColor = const Color(0xffcccdd0);
+  static const Color green = Color.fromRGBO(123, 237, 141, 1);
+  static const Color inputBackColor = Color(0xfff0f4f8);
+  static const Color greyTextColor = Color(0xffcccdd0);
+  static const Color boxShadowColor = Color(0x12000000);
+  static const Color recipesInputColor = Color(0xffffffff);
+  static const Color favoriesTextButtonColor = Color(0xffa6bcd0);
 }
