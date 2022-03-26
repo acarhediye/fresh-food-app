@@ -29,4 +29,11 @@ class CustomTextStyle {
       fontFamily: "AcuminPro",
       fontStyle: FontStyle.normal,
       fontSize: 26);
+
+  static final TextStyle greyCardHeaderStyle = TextStyle(
+      color: CustomColor.greyBlue,
+      fontWeight: FontWeight.w400,
+      fontFamily: "AcuminPro",
+      fontStyle: FontStyle.normal,
+      fontSize: 26);
 }
