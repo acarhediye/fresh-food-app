@@ -22,4 +22,11 @@ class CustomTextStyle {
       fontFamily: "AcuminPro",
       fontStyle: FontStyle.normal,
       fontSize: 18);
+
+  static final TextStyle favoriesTextButtonStyle = TextStyle(
+      color: CustomColor.favoriesTextButtonColor,
+      fontWeight: FontWeight.w500,
+      fontFamily: "AcuminPro",
+      fontStyle: FontStyle.normal,
+      fontSize: 10.7);
 }
