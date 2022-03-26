@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fresh_food/controllers/bottom_navigator_controller.dart';
+import 'package:fresh_food/controllers/favoreies_all_controller/favories_controller.dart';
 import 'package:fresh_food/views/pages/quick_shop_page.dart';
-import 'package:fresh_food/views/pages/favories_page.dart';
+import 'package:fresh_food/views/favories_page/favories_page.dart';
 import 'package:fresh_food/views/pages/home_page.dart';
 import 'package:fresh_food/views/pages/settings_page.dart';
 import 'package:fresh_food/views/pages/shopping_bag_page.dart';
@@ -20,17 +21,15 @@ class CustomBottomNavigator extends StatelessWidget {
         initState: (state) {},
         builder: (controller) {
           return Scaffold(
-            body: SafeArea(
-              child: IndexedStack(
-                index: controller.tabIndex,
-                children: [
-                  HomePage(),
-                  FavoriesPage(),
-                  QuickShopPage(),
-                  ShoppingBagPage(),
-                  SettingsPage(),
-                ],
-              ),
+            body: IndexedStack(
+              index: controller.tabIndex,
+              children: [
+                HomePage(),
+                FavoriesPage(),
+                QuickShopPage(),
+                ShoppingBagPage(),
+                SettingsPage(),
+              ],
             ),
             bottomNavigationBar: BottomNavigationBar(
               type: BottomNavigationBarType.fixed,
