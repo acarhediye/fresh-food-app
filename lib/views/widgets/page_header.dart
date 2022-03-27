@@ -2,12 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:fresh_food/customStyle/customTextStyle.dart';
 
 class PageHeader extends StatelessWidget {
-  PageHeader({Key? key, required this.text}) : super(key: key);
+  PageHeader(
+      {Key? key, this.prefixWidget, required this.text, this.suffixWidget})
+      : super(key: key);
+
+  Widget? prefixWidget;
   String text;
+  Widget? suffixWidget;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 30, right: 30),
       alignment: Alignment.center,
       width: 250,
       height: 150,
@@ -22,9 +28,17 @@ class PageHeader extends StatelessWidget {
           ],
           color: Color(0xffffffff)),
       child: // Settings
+          Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          prefixWidget ?? Container(),
           Text(text,
               style: CustomTextStyle.greyHeaderStyle,
               textAlign: TextAlign.center),
+          suffixWidget ?? Container(),
+        ],
+      ),
     );
   }
 }
