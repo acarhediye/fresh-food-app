@@ -14,7 +14,15 @@ class Languages extends Translations {
           'your_orders': 'Your Orders',
           'live_chats': 'Live Chat',
           'dark_mode': 'Dark Mode',
-          'sign_out': 'Sign Out'
+          'sign_out': 'Sign Out',
+          'your_account': 'Your Account',
+          'your_information': 'Your Information',
+          'full_name': 'Full Name',
+          'address': 'Address',
+          'your_preferences': 'Your Preferences',
+          'notifications': 'Notifications',
+          'newsletter': 'Newsletter',
+          'payment_methods': 'Payment Methods'
         },
         'tr_TR': {
           'sign_in': 'Giriş Yap',
@@ -27,7 +35,15 @@ class Languages extends Translations {
           'your_orders': 'Sepetiniz',
           'live_chats': 'Canlı Mesaj',
           'dark_mode': 'Siyah Tema',
-          'sign_out': 'Çıkış Yap'
+          'sign_out': 'Çıkış Yap',
+          'your_account': 'Hesabınız',
+          'your_information': 'Bilgileriniz',
+          'full_name': 'Ad Soyad',
+          'address': 'Adres',
+          'your_preferences': 'Tercihleriniz',
+          'notifications': 'Bildirimler',
+          'newsletter': 'Bülten',
+          'payment_methods': 'Ödeme Yöntemleri'
         },
       };
 }
