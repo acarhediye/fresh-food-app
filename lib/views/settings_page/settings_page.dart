@@ -2,8 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fresh_food/customStyle/customColors.dart';
 import 'package:fresh_food/customStyle/customTextStyle.dart';
-import 'package:get/get.dart';
 import 'package:fresh_food/views/widgets/page_header.dart';
+import 'package:fresh_food/views/your_account_page/your_account_page.dart';
+import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
 
 part './widgets/button.dart';
@@ -20,16 +21,15 @@ class SettingsPage extends StatelessWidget {
           text: 'settings'.tr,
         ),
         Padding(
-          padding: EdgeInsets.all(40),
+          padding: const EdgeInsets.all(35),
           child: _buttonGroup(),
-        ),
+        )
       ],
     );
   }
 
   Widget _buttonGroup() {
     return Column(
-      mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         _Button(
@@ -40,7 +40,9 @@ class SettingsPage extends StatelessWidget {
             color: CustomColor.greyBlue,
             size: 18,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Get.to(YourAccountPage());
+          },
         ),
         _Button(
           prefixIcon: Icons.list,
@@ -68,7 +70,6 @@ class SettingsPage extends StatelessWidget {
           suffixWidget: _suffixDarkThemeWidget(),
           onPressed: () {
             darkModeController = !darkModeController;
-            print(darkModeController);
           },
         ),
         _Button(
@@ -87,7 +88,9 @@ class SettingsPage extends StatelessWidget {
       duration: const Duration(microseconds: 300),
       curve: Curves.decelerate,
       decoration: BoxDecoration(
-        border: Border.all(color: CustomColor.greyBlue),
+        border: Border.all(
+            color:
+                darkModeController ? CustomColor.green : CustomColor.greyBlue),
         borderRadius: BorderRadius.circular(50),
       ),
       child: AnimatedAlign(
@@ -99,7 +102,8 @@ class SettingsPage extends StatelessWidget {
             width: 30,
             height: 30,
             decoration: BoxDecoration(
-              color: CustomColor.greyBlue,
+              color:
+                  darkModeController ? CustomColor.green : CustomColor.greyBlue,
               borderRadius: BorderRadius.circular(99),
             ),
             child: Icon(
