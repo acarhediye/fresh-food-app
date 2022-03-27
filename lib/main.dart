@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:fresh_food/Languages/languages.dart';
 import 'package:fresh_food/views/bottom_navigator/bottom_navigator.dart';
 import 'package:get/get.dart';
 
-void main() => runApp(const GetMaterialApp(home: MyApp()));
+void main() => runApp(GetMaterialApp(
+      home: MyApp(),
+      translations: Languages(),
+      locale: Get.deviceLocale,
+      fallbackLocale: const Locale('en', 'US'),
+    ));
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
